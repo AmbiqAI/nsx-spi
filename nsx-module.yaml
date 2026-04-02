@@ -9,6 +9,24 @@ support:
   ambiqsuite: true
   zephyr: false
 
+summary: SPI wrapper helpers for talking to SPI-attached devices and peripherals.
+
+capabilities:
+  - spi
+  - peripheral_bus
+  - device_transfer
+
+use_cases:
+  - SPI peripheral bring-up
+  - board validation with SPI devices
+  - reusable SPI communication support
+
+agent_keywords:
+  - spi
+  - bus
+  - transfer
+  - peripheral
+
 build:
   cmake:
     package: nsx_spi
